@@ -1,0 +1,8 @@
+<label id="task-item" (dblclick)="onDeleteTask()">
+  <input
+    type="checkbox"
+    [(ngModel)]="task.completed"
+    (change)="onToggleTask()"
+  />
+  {{ task.description }}
+</label>

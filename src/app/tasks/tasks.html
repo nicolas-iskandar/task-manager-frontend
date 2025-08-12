@@ -1,0 +1,7 @@
+@for(task of tasks; track task.id) {
+<app-task
+  [task]="task"
+  (onToggleTaskOutput)="onToggleTask($event)"
+  (onDeleteTaskOutput)="onDeleteTask($event)"
+/>
+}

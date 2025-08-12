@@ -1,0 +1,4 @@
+<form (ngSubmit)="onSubmit()">
+  <input placeholder="Enter task" [(ngModel)]="description" name="task" />
+  <button [disabled]="!description.trim()">Add</button>
+</form>
